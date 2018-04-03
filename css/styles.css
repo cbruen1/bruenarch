@@ -1,0 +1,195 @@
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue/white
+#EF233C - red
+*/
+@font-face {
+  font-family: Lintel;
+  src: url(Lintel-Regular.ttf);
+  font-weight:400;
+} 
+
+/* Global styles
+-------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: "Lintel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+h1, h2 {
+  /* font-family: 'Caveat', cursive; */
+  font-family: "Lintel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+h3 {
+  margin: 0;
+}
+a {
+  /* color: #EF233C; */
+  color: darkgray;
+}
+a:hover {
+  text-decoration: none;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Download button */
+.btn {
+  text-decoration: none;
+  /* background: #EF233C; */
+  background: yellow;
+  /* color: white; */
+  color: darkgrey;
+  padding: 10px;
+  display: inline-block;
+}
+
+
+/* Header and Footer
+-------------------------*/
+header, footer {
+  /* background: #2B2D42; */
+  background: darkgray;
+  /* color: #8D99AE; */
+  color: white;
+}
+/* header */
+header {
+  padding-top: 50px;
+  position: relative;
+}
+header h1, header h2 {
+  color: white;
+  margin: 0;
+}
+.profile-img {
+  border-radius: 50%;
+}
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+
+/* Navigation
+-------------------------*/
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*z-index: 100;*/
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+/* Work 
+-------------------------*/
+.work {
+  background: white;
+  /* background: linear-gradient(rgb(254, 254, 255), rgba(237, 240, 245, 0.5)), */
+  background: linear-gradient(rgba(237, 240, 245, 0.5), rgb(254, 254, 255)),
+  url(../images/model4.jpg) no-repeat fixed;
+  background-size: cover;
+}
+h3 ~ p {
+  margin: 0;
+}
+.job-description {
+  margin-bottom: 25px;
+}
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+
+/* Services
+-------------------------*/
+.services {
+  /* background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)), */
+  /* background: linear-gradient(rgba(201, 203, 208, 0.8), rgba(201, 203, 208, 0.5)), */
+  background: linear-gradient(rgba(169, 169, 169, 0.3), rgba(169, 169, 169, 0.1)),
+              /* url(../images/model4.jpg) no-repeat fixed; */
+              url(../images/model8-4.jpg) no-repeat fixed;
+  background-size: cover;
+}
+
+p + h3 {
+  margin-top: 30px;
+}
+
+div.white-text a {
+  color: white;
+}
+
+/* Me new - about
+-------------------------*/
+.about {
+  /* background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)), */
+  /* background: linear-gradient(rgba(201, 203, 208, 0.8), rgba(201, 203, 208, 0.5)), */
+  background: linear-gradient(rgba(254, 254, 255, 0.8), rgba(254, 254, 255)),
+              /* url(../images/model8-4.jpg) no-repeat fixed; */
+              url(../images/model4.jpg) no-repeat fixed;
+  background-size: cover;
+}
+
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 899px){
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+  }
+}
