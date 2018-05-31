@@ -23,6 +23,7 @@ body {
   /* font-family: 'Open Sans', sans-serif; */
   font-family: "Lintel", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  color: whitesmoke;
 }
 h1, h2 {
   /* font-family: 'Caveat', cursive; */
@@ -182,7 +183,9 @@ div.white-text a {
   text-align: center;
 }
 
-
+.about div {
+  color: darkgrey;
+}
 
 /* Media Queries
 -------------------------*/
